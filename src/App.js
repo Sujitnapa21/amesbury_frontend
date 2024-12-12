@@ -1,20 +1,19 @@
-// import React from "react";
-// import { BrowserRouter, Switch, Route } from "react-router-dom";
-// import { ToastContainer } from 'react-toastify';
-// import 'react-toastify/dist/ReactToastify.css';
-// import Login from './components/pages/Login.js'
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Login from "./components/Login";
+import SignUp from "./components/SignUp";
+import ForgotPassword from "./components/ForgotPassword";
 
-// function App() {
-//   return (
-//     <BrowserRouter>
-//       <div className="App">
-//         < ToastContainer position="top-center" />
-//         {/* <Switch></Switch> */}
-//           <Route exact path="/" component={Login} />
-        
-//       </div>
-//     </BrowserRouter>
-//   );
-// }
+function App() {
+  return (
+    <Router>
+      <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/signup" element={<SignUp />} />
+        <Route path="/forgot-password" element={<ForgotPassword />} />
+      </Routes>
+    </Router>
+  );
+}
 
-// export default App;
+export default App;
