@@ -18,11 +18,15 @@ const SignUp = () => {
           </button>
         </form>
         <p>
-          Already have an account? <a href="/login">Log in</a>
+          Already have an account? <a href="/">Log in</a>
         </p>
       </div>
     </div>
   );
 };
+
+function SignUpPage(){
+  
+}
 
 export default SignUp;

@@ -17,8 +17,11 @@ const ForgotPassword = () => {
             required
           />
           <button type="submit" className="auth-button">
-            Login
+            Submit
           </button>
+          <p>
+          Don’t have an account? <a href="/signup">Sign up here</a>
+        </p>
         </form>
       </div>
     </div>

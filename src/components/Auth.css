@@ -1,3 +1,5 @@
+
+
 .auth-container {
   display: flex;
   justify-content: center;
@@ -75,6 +77,16 @@ a:hover {
   font-weight: bold;
 }
 
-img {
+.img-logo {
   width: 150px;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-icon {
+  height: 30px;
 }
